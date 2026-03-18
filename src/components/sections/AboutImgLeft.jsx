@@ -3,7 +3,7 @@ import Paragraphs from "../sectionElements/Paragraphs";
 import SectionArea from "../sectionElements/SectionArea";
 import SectionTitles from "../sectionElements/SectionTitles";
 import SectionWrapper from "../sectionElements/SectionWrapper";
-import imgAboutPerson from "../../assets/imgs/about/aboutRita.png";
+import imgAboutPerson from "../../assets/imgs/about/about.webp";
 import ButtonWithIcon from "../interactives/ButtonWithIcon";
 import MotionDivDownToUp from "../animation/MotionDivDownToUp";
 import { Dialog } from "primereact/dialog";
@@ -11,6 +11,7 @@ import "primereact/resources/themes/saga-blue/theme.css";
 import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 import AboutFading from "../sectionElements/AboutFading";
+import SectionHeaderNovo from "../sectionElements/SectionHeaderNovo";
 
 export default function AboutImgLeft() {
   const [visible, setVisible] = useState(false);
@@ -26,54 +27,36 @@ export default function AboutImgLeft() {
 
       // Aguarda 1 segundo antes de abrir o modal
       setTimeout(() => {
-        setModalTitle("Sobre mim");
-        setModalContent(
-          <p>
-            Olá, sou Rita de Cassia Sobreira de Almeida. <br></br>
-            Por questões profissionais decidi adquirir o nome, Rita Almeida,
-            para melhor comunicação nas redes sociais. <br /> <br />
-            Tenho formação acadêmica em administração de empresas há 30 anos, e
-            formação técnica corretora de imóveis há 10.
-            <br />
-            <br></br>Ser corretora de imóveis foi uma indicação de pessoas
-            próximas a mim, incentivaram pela minha personalidade comunicativa e
-            performance de conhecimento. <br />
-            <br />
-            Sou católica e acredito que Deus tem um caminho para todos!
-            <br />
-            <br />
-            Cada dia traz um novo desafio e a oportunidade de ajudar alguém a
-            encontrar o local ideal para chamar de lar. Continuo empregando as
-            habilidades de administração no meu dia a dia, gerenciando não
-            apenas propriedades, mas também sonhos e expectativas.
-          </p>
-        );
+        setModalTitle("Sobre a Big Lar");
+        setModalContent(<p>A_Definir</p>);
         setVisible(true);
         setButtonLabel("Leia mais"); // Retorna o label ao estado original
       }, 1000); // Aguarda 1 segundo
     } else {
       // Se a tela for maior, abre o modal diretamente sem mudar o label
-      setModalTitle("Sobre mim");
+      setModalTitle("Sobre a Big Lar");
       setModalContent(
         <p>
-          Olá, sou Rita de Cassia Sobreira de Almeida. <br></br>
-          Por questões profissionais decidi adquirir o nome, Rita Almeida, para
-          melhor comunicação nas redes sociais. <br /> <br />
-          Tenho formação acadêmica em administração de empresas há 30 anos, e
-          formação técnica corretora de imóveis há 10.
-          <br />
-          <br></br>Ser corretora de imóveis foi uma indicação de pessoas
-          próximas a mim, incentivaram pela minha personalidade comunicativa e
-          performance de conhecimento. <br />
-          <br />
-          Sou católica e acredito que Deus tem um caminho para todos!
+          A Big Lar Imóveis reúne corretores associados qualificados para
+          atender clientes que buscam imóveis e lotes na região de Brasília.
+          Nosso foco é conectar pessoas às melhores oportunidades do mercado
+          imobiliário.
           <br />
           <br />
-          Cada dia traz um novo desafio e a oportunidade de ajudar alguém a
-          encontrar o local ideal para chamar de lar. Continuo empregando as
-          habilidades de administração no meu dia a dia, gerenciando não apenas
-          propriedades, mas também sonhos e expectativas.
-        </p>
+          Atuamos com profissionalismo e conhecimento da região, oferecendo
+          suporte completo para quem deseja comprar ou vender com segurança e
+          tranquilidade.
+          <br />
+          <br />
+          Atendemos principalmente clientes de médio e alto padrão que valorizam
+          um atendimento personalizado, discrição nas negociações e imóveis bem
+          selecionados.
+          <br />
+          <br />
+          Mais do que intermediar negócios, trabalhamos para garantir uma
+          experiência segura, transparente e eficiente em cada etapa da
+          negociação.
+        </p>,
       );
       setVisible(true);
     }
@@ -91,15 +74,23 @@ export default function AboutImgLeft() {
         </MotionDivDownToUp>
 
         <div className="desktop1:w-[450px] desktop2:w-[570px]">
-          <MotionDivDownToUp>
-            <SectionTitles className="mb-[18px] desktop1:mb-[26px]">
-              Sobre mim 👋
-            </SectionTitles>
-          </MotionDivDownToUp>
-          <MotionDivDownToUp>
+          <SectionHeaderNovo
+            miniTitle="QUEM É A BIG LAR IMÓVEIS"
+            title="Especialistas em bons negócios"
+            subtitle="Corretores qualificados para atender clientes exigentes em Brasília."
+            className={`desktop1:hidden`}
+          />
+          <SectionHeaderNovo
+            miniTitle="QUEM É A BIG LAR IMÓVEIS"
+            title="Especialistas em bons negócios"
+            subtitle="Corretores qualificados para atender clientes exigentes em Brasília."
+            type="article"
+            className={`hidden desktop1:flex flex-col`}
+          />
+          <MotionDivDownToUp className={``}>
             <AboutFading />
           </MotionDivDownToUp>
-          <MotionDivDownToUp className="mt-[40px]">
+          <MotionDivDownToUp className="mt-[40px] flex justify-center desktop1:justify-start">
             <ButtonWithIcon
               className=""
               label={buttonLabel}
@@ -126,7 +117,7 @@ export default function AboutImgLeft() {
         </div>
       </SectionWrapper>
       <Dialog
-        className=" font-secondFont"
+        className="font-secondFont"
         header={modalTitle}
         visible={visible}
         onHide={() => setVisible(false)}

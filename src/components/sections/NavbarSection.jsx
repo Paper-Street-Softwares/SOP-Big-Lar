@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import Navbar from "../sectionElements/Navbar";
-import Logo from "../../assets/importAssets/Logo.png";
+import Logo from "../../assets/importAssets/logo.webp";
 import ListGroup from "../sectionElements/ListGroup";
 import Sidebar from "../sectionElements/Sidebar";
 import { Link as ScrollLink } from "react-scroll";
@@ -100,22 +100,36 @@ export default function NavbarSection() {
   return (
     <div className="w-full">
       <div
-        className={`fixed z-20 w-full transition-colors duration-1000 ${
+        className={`fixed flex-col z-20  ${
           scrolling
-            ? "bg-white bg-opacity-100 shadow-lg tablet1:-mt-[80px] -mt-[100px] transition-all duration-1000"
-            : "transition-colors duration-1000"
+            ? "w-full transition-all duration-700 bg-white border-b border-primary"
+            : "w-full transition-all duration-700"
         }`}
       >
         <Navbar>
-          <img
-            src={Logo}
-            alt="Logo Rita Almeida Corretora"
-            className={`${
-              scrolling
-                ? "w-[15%] phone3:max-w-[10%] tablet1:w-[10%] tablet2:max-w-[10%] desktop1:max-w-[5%] transition-all duration-1000"
-                : "my-[10px] w-[20%] phone3:max-w-[15%] tablet1:w-[10%] desktop1:max-w-[7%] transition-colors duration-1000 "
-            } tablet3:mb-0`}
-          />
+          <a
+            className="cursor-pointer w-fit h-[80px] tablet1:h-[120px] desktop1:h-[110px] flex items-center justify-start overflow-hidden "
+            href="/"
+            onClick={() => window.location.reload()}
+            aria-label="recarregar página"
+          >
+            <img
+              src={Logo}
+              alt="Logo"
+              className="desktop1:hidden w-auto max-h-full object-contain flex"
+              width={217}
+              height={109}
+              fetchPriority="high"
+            />
+            <img
+              src={Logo}
+              alt="Logo"
+              className="hidden desktop1:block h-full w-auto object-contain"
+              width={300}
+              height={150}
+              fetchPriority="high"
+            />
+          </a>
           <div className="flex items-center justify-between gap-[16px]">
             <div className="hidden tablet1:flex desktop1:hidden">
               <a href={whatsappContactLink} onClick={handleWhatsAppClick}>

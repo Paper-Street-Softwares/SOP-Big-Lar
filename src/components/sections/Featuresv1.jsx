@@ -2,43 +2,35 @@ import FeatureImgOnBgCard from "../cards/FeatureImgOnBgCard";
 import SectionArea from "../sectionElements/SectionArea";
 import SectionHeader from "../sectionElements/SectionHeader";
 import SectionWrapper from "../sectionElements/SectionWrapper";
-import imgCasas from "../../assets/imgs/features/featuresCasas.png";
-import imgAps from "../../assets/imgs/features/featuresApartamentos.png";
-import imgTerrenos from "../../assets/imgs/features/featuresTerrenos.png";
-import imgPontos from "../../assets/imgs/features/featuresPontosComerciais.png";
+import imgCasas from "../../assets/imgs/features/features1.webp";
+import imgAps from "../../assets/imgs/features/features2.webp";
+import imgTerrenos from "../../assets/imgs/features/features3.webp";
+import SectionHeaderNovo from "../sectionElements/SectionHeaderNovo";
 
 export default function Featuresv1() {
   return (
-    <SectionArea id="service" className="bg-quinary desktop1:pb-[0px]">
-      <SectionHeader
-        className="text-center"
-        sectionHeaderTitle="Trabalhamos com todos os tipos de imóveis"
-        sectionHeaderSubtitle="Temos diversas opções imobiliárias que se encaixam perfeitamente no seu futuro"
+    <SectionArea id="service" className="bg-quinary">
+      <SectionHeaderNovo
+        miniTitle="SERVIÇOS"
+        title="Soluções completas em imóveis"
+        subtitle="Ajudamos você a comprar ou vender com segurança e tranquilidade."
       />
       <SectionWrapper>
-        <div
-          className="flex flex-wrap justify-between w-full gap-[36px] tablet1:gap-[24px]"
-          
-        >
+        <div className="flex flex-wrap justify-between w-full gap-[36px] tablet1:gap-[24px]">
           <FeatureImgOnBgCard
             bgImg={imgCasas}
-            title="Casas"
-            description="Descubra a casa dos seus sonhos!"
+            title="Compra de Imóveis"
+            description="Encontre o imóvel ideal com segurança e apoio total."
           />
           <FeatureImgOnBgCard
             bgImg={imgAps}
-            title="Apartamentos"
-            description="Praticidade em nossos apartamentos sofisticados."
+            title="Venda de Imóveis"
+            description="Venda seu imóvel mais rápido e pelo melhor valor."
           />
           <FeatureImgOnBgCard
             bgImg={imgTerrenos}
-            title="Terrenos"
-            description="Construa a realidade que você deseja em nossos terrenos bem localizados."
-          />
-          <FeatureImgOnBgCard
-            bgImg={imgPontos}
-            title="Pontos Comerciais"
-            description="Posicione seu negócio para o sucesso!"
+            title="Compra e Venda de Lotes"
+            description="Oportunidades de lotes para investir ou construir e encontre compradores interessados"
           />
         </div>
       </SectionWrapper>

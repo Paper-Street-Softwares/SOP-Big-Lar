@@ -84,7 +84,7 @@ export default function TrustedBy() {
     setModalContent(
       <div>
         <TrustedByMore />
-      </div>
+      </div>,
     );
     setVisible(true);
   };
@@ -93,8 +93,8 @@ export default function TrustedBy() {
     <div className="w-full pt-[40px] flex flex-col items-center tablet1:pt-[64px] desktop1:pt-[96px]">
       <SectionHeader
         className="text-center"
-        sectionHeaderTitle="Trabalhamos com os principais empreendimentos"
-        sectionHeaderSubtitle="Conectando você aos melhores e mais confiáveis empreendimentos do mercado"
+        sectionHeaderTitle="A_Definir"
+        sectionHeaderSubtitle="A_Definir"
       />
       <SectionWrapper>
         <MotionDivDownToUp className="w-full mb-[26px] tablet1:mb-[40px] desktop1:mb-[80px]">

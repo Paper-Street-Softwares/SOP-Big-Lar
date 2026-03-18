@@ -51,18 +51,20 @@
 .button-gradient-effect {
   position: relative;
   overflow: hidden;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 .button-gradient-effect::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, #3299CC, #007FFF); 
+  background: linear-gradient(to right, #E0E2E9, #E0E2E9);
   transform: translateX(-100%);
   transition: transform 1s ease;
-  z-index: 1; 
-  border-radius: 0 40px 40px 0; 
+  z-index: 1;
+  border-radius: 0 40px 40px 0;
 }
 
 .button-gradient-effect:hover::before {
@@ -70,16 +72,14 @@
 }
 
 .button-gradient-effect:hover::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
-  z-index: 2; 
-  border-radius: 0 40px 40px 0; 
+  z-index: 2;
+  border-radius: 0 40px 40px 0;
 }
 
 .button-gradient-effect > * {
   position: relative;
-  z-index: 3; 
+  z-index: 3;
 }
-
-

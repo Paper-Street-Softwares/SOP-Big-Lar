@@ -55,7 +55,7 @@ export default function Numbers() {
             </h1>
             <p className="font-secondFont text-title1 tablet1:text-title3">
               <MotionDivDownToUp>
-                Imóveis vendidos ou alugados
+               A_Definir
               </MotionDivDownToUp>
             </p>
           </div>

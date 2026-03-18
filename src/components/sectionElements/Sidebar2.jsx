@@ -12,8 +12,8 @@ import {
   AlignJustify,
 } from "lucide-react";
 import { Link } from "react-scroll";
-import Logo from "../../assets/importAssets/Logo.png";
-import imgAboutPerson from "../../assets/imgs/about/aboutRita.png";
+import Logo from "../../assets/importAssets/logo.webp";
+import imgAboutPerson from "../../assets/imgs/about/about.webp";
 
 export default function HeadlessDemo() {
   const [visible, setVisible] = useState(false);
@@ -116,7 +116,6 @@ export default function HeadlessDemo() {
                             </a>
                           </li>
                           <ul className="p-0 m-0 list-none">
-                            
                             <li>
                               <a className="flex items-center w-full p-3 transition-colors cursor-pointer p-ripple border-round text-700 hover:surface-100 transition-duration-150">
                                 <ServerIcon />
@@ -137,25 +136,25 @@ export default function HeadlessDemo() {
                               </a>
                             </li>
                             <li>
-                            <li>
-                              <a className="flex items-center w-full p-3 transition-colors cursor-pointer p-ripple border-round text-700 hover:surface-100 transition-duration-150">
-                                <UserSearch />
-                                <span className="ml-[8px]">
-                                  <Link
-                                    to="about"
-                                    className="cursor-pointer"
-                                    spy={true}
-                                    smooth={true}
-                                    duration={500}
-                                    offset={-50}
-                                    href="#"
-                                  >
-                                    Sobre Nós
-                                  </Link>
-                                </span>
-                                <Ripple />
-                              </a>
-                            </li>
+                              <li>
+                                <a className="flex items-center w-full p-3 transition-colors cursor-pointer p-ripple border-round text-700 hover:surface-100 transition-duration-150">
+                                  <UserSearch />
+                                  <span className="ml-[8px]">
+                                    <Link
+                                      to="about"
+                                      className="cursor-pointer"
+                                      spy={true}
+                                      smooth={true}
+                                      duration={500}
+                                      offset={-50}
+                                      href="#"
+                                    >
+                                      Sobre Nós
+                                    </Link>
+                                  </span>
+                                  <Ripple />
+                                </a>
+                              </li>
                               <a className="flex items-center w-full p-3 transition-colors cursor-pointer p-ripple border-round text-700 hover:surface-100 transition-duration-150">
                                 <HelpCircle />
                                 <span className="ml-[8px]">

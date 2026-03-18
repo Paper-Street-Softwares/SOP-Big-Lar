@@ -29,17 +29,17 @@ export default function HeroSection() {
           <div className="flex h-[120px] phone2:h-[120px] tablet1:h-[145px] desktop3:h-[145px]" />
           <div className="flex flex-col w-[90%] max-w-[1215px] items-start pb-[80px] pt-[50px] desktop1:pb-[100px] desktop1:pt-[80px]">
             <div className="desktop1:w-[700px] flex flex-col text-white">
-              <MotionDivLeftToRight>
+              {/* <MotionDivLeftToRight>
                 <div className="w-auto text-center desktop1:text-left font-secondFont phone1:text-paragraph4">
                   <p className="mb-[24px] bg-black bg-opacity-25 rounded-2xl px-[16px] py-[6px] inline-block">
-                    Corretora de imóveis em Petrolina
+                    A_Definir
                   </p>
                 </div>
-              </MotionDivLeftToRight>
+              </MotionDivLeftToRight> */}
               <MotionDivLeftToRight>
-                <div className="font-medium leading-none text-center desktop1:text-left text-title6 phone1:text-[36px] phone2:text-[40px] phone3:text-[44px] tablet1:text-[48px] desktop1:text-[56px]">
+                <div className="font-medium leading-none text-center desktop1:text-left text-title6 phone1:text-[26px] phone2:text-[30px] phone3:text-[44px] tablet1:text-[48px] desktop1:text-[56px]">
                   <h1 className=" mb-[24px]">
-                    Transformando desejos em endereços
+                    TRANSFORMANDO SONHOS EM ENDEREÇOS
                   </h1>
                 </div>
               </MotionDivLeftToRight>
@@ -77,7 +77,7 @@ export default function HeroSection() {
                         label={
                           isRedirecting
                             ? "Redirecionando..."
-                            : "Consultar Imóveis"
+                            : " Consultar Imóveis"
                         }
                         icon={
                           <svg

@@ -41,15 +41,16 @@ export default function AccordionExpandDefault() {
         >
           <Typography>
             <h1 className="font-secondFont font-bold">
-              Quero financiar um imóvel, como eu faço?
+              Como posso anunciar meu imóvel com a imobiliária?
             </h1>
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
             <p className="font-secondFont text-paragraph4 text-paragraphLight ">
-              Primeiro passo é ter renda comprovada e não ter restrições no CPF,
-              e depois, fazer a simulação.
+              Basta entrar em contato com nossa equipe. Um corretor irá analisar
+              seu imóvel e orientar todo o processo para colocá-lo à venda com
+              segurança.
             </p>
           </Typography>
         </AccordionDetails>
@@ -70,19 +71,16 @@ export default function AccordionExpandDefault() {
         >
           <Typography>
             <h1 className="font-secondFont font-bold">
-              Fui aprovado(a). Quais documentos eu preciso?
+              Vocês ajudam em todo o processo de compra?
             </h1>
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
             <p className="font-secondFont text-paragraph4 text-paragraphLight ">
-              É preciso que me envie em PDF: RG, CPF, Certidão de nascimento ou
-              de casamento (se for casado é necessário a documentação do
-              cônjuge), comprovante de endereço no nome do titular e, por
-              último, Imposto de Renda ou contracheque, caso CLT, é necessário
-              Carteira de Trabalho Digital, e caso queira utilizar o FGTS é
-              necessário o extrato dele também.
+              Sim. Acompanhamos desde a escolha do imóvel ou lote até a
+              finalização da negociação, garantindo mais segurança para o
+              comprador.
             </p>
           </Typography>
         </AccordionDetails>
@@ -103,14 +101,15 @@ export default function AccordionExpandDefault() {
         >
           <Typography>
             <h1 className="font-secondFont font-bold">
-              Quero que venda/alugue meu imóvel, como proceder?
+              Posso agendar visitas aos imóveis disponíveis?
             </h1>
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
             <p className="font-secondFont text-paragraph4 text-paragraphLight ">
-              Entre em contato para negociações e contratação.
+              Sim. Nossa equipe organiza as visitas e acompanha você para que
+              possa conhecer cada imóvel com tranquilidade.{" "}
             </p>
           </Typography>
         </AccordionDetails>
@@ -131,14 +130,16 @@ export default function AccordionExpandDefault() {
         >
           <Typography>
             <h1 className="font-secondFont font-bold">
-              Qual o valor da parcela do financiamento?
+              Vocês atendem apenas em Brasília?
             </h1>
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
             <p className="font-secondFont text-paragraph4 text-paragraphLight ">
-              Depende do valor do imóvel e da renda de cada pessoa.
+              Atendemos clientes interessados em imóveis e lotes na região de
+              Brasília, oferecendo suporte completo para compradores e
+              vendedores.{" "}
             </p>
           </Typography>
         </AccordionDetails>
