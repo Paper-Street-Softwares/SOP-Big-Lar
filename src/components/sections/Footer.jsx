@@ -169,16 +169,16 @@ function Footer() {
         <p className="opacity-70">
           Esse site não faz parte do Google LLC nem do Facebook Inc. e não
           oferecemos nenhum tipo de serviço oficial do governo. -{" "}
-          <span>
-            <button
-              onClick={openDialog}
-              aria-label="Abre um Modal com os termos da Política de privacidade"
-              className="underline cursor-pointer outline-none"
-            >
-              Políticas de privacidade
-            </button>
-          </span>
         </p>
+        <span>
+          <button
+            onClick={openDialog}
+            aria-label="Abre um Modal com os termos da Política de privacidade"
+            className="underline cursor-pointer outline-none"
+          >
+            Políticas de privacidade
+          </button>
+        </span>
       </div>
       <Dialog
         className="font-secondFont"
