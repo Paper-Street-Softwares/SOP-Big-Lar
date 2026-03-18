@@ -15,34 +15,17 @@ import { Link } from "react-scroll";
 import Logo from "../../assets/importAssets/logo.webp";
 import imgAboutPerson from "../../assets/imgs/about/about.webp";
 
-export default function HeadlessDemo() {
+export default function HeadlessDemo({ isSolid }) {
   const [visible, setVisible] = useState(false);
   const [submenuVisible, setSubmenuVisible] = useState(true);
   const [reportsSubmenuVisible, setReportsSubmenuVisible] = useState(false);
   const [revenueSubmenuVisible, setRevenueSubmenuVisible] = useState(false);
   const [aplicationSubmenuVisible, setAplicationSubmenuVisible] =
     useState(true);
-  const [scrolled, setScrolled] = useState(false);
 
   const toggleSidebar = () => {
     setVisible(!visible);
   };
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   return (
     <div className="inset-0 z-10 flex ">
@@ -54,9 +37,9 @@ export default function HeadlessDemo() {
       />
       <div className="flex justify-center card">
         <AlignJustify
-          className={`p-button-rounded p-button-outlined lg:hidden ${
-            scrolled ? "text-black" : "text-white"
-          } w-[40px] h-[40px]`}
+          className={`lg:hidden ${
+            isSolid ? "text-black" : "text-white"
+          } w-[40px] h-[40px] transition duration-300`}
           onClick={() => setVisible(true)}
         />
         <Sidebar
