@@ -38,7 +38,7 @@ export default function HeadlessDemo({ isSolid }) {
       <div className="flex justify-center card">
         <AlignJustify
           className={`lg:hidden ${
-            isSolid ? "text-black" : "text-white"
+            isSolid ? "text-black" : "text-black"
           } w-[40px] h-[40px] transition duration-300`}
           onClick={() => setVisible(true)}
         />
