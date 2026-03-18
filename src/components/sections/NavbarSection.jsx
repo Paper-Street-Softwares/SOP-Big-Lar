@@ -34,11 +34,12 @@ export default function NavbarSection() {
   const sidebarRef = useRef(null);
 
   const handleScroll = () => {
-    if (window.scrollY > 0) {
-      setScrolling(true);
-    } else {
-      setScrolling(false);
-    }
+    const shouldScroll = window.scrollY > 50;
+
+    setScrolling((prev) => {
+      if (prev !== shouldScroll) return shouldScroll;
+      return prev;
+    });
   };
 
   const toggleSidebar = () => {
@@ -100,10 +101,10 @@ export default function NavbarSection() {
   return (
     <div className="w-full">
       <div
-        className={`fixed flex-col z-20  ${
+        className={`fixed flex-col z-20 ${
           scrolling
-            ? "w-full transition-all duration-700 bg-white border-b border-primary"
-            : "w-full transition-all duration-700"
+            ? "w-full transition-colors duration-300 bg-white border-b border-primary"
+            : "w-full transition-colors duration-300"
         }`}
       >
         <Navbar>
@@ -116,7 +117,7 @@ export default function NavbarSection() {
             <img
               src={Logo}
               alt="Logo"
-              className="desktop1:hidden w-auto max-h-full object-contain flex"
+              className="desktop1:hidden w-auto max-w-[80%] max-h-full object-contain flex"
               width={217}
               height={109}
               fetchPriority="high"

@@ -37,7 +37,7 @@ export default function HeroSection() {
                 </div>
               </MotionDivLeftToRight> */}
               <MotionDivLeftToRight>
-                <div className="font-medium leading-none text-center desktop1:text-left text-title6 phone1:text-[26px] phone2:text-[30px] phone3:text-[44px] tablet1:text-[48px] desktop1:text-[56px]">
+                <div className="font-medium leading-none text-center desktop1:text-left text-title6 phone1:text-[26px] phone2:text-[30px] phone3:text-[34px] tablet1:text-[48px] desktop1:text-[56px]">
                   <h1 className=" mb-[24px]">
                     TRANSFORMANDO SONHOS EM ENDEREÇOS
                   </h1>
