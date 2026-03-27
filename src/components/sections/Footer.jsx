@@ -69,7 +69,7 @@ function Footer() {
             </h1>
             <div className="flex full gap-x-[8px] items-center opacity-70">
               <p className="text-title4">👋</p>
-              <p>Obrigada pela confiança!</p>
+              <p>Obrigado pela confiança!</p>
             </div>
             <div className="flex full gap-x-[8px] items-center opacity-70">
               <p className="text-title4">
