@@ -85,7 +85,7 @@ export default function AboutImgLeft() {
             title="Especialistas em bons negócios"
             subtitle="Corretores qualificados para atender clientes exigentes em Brasília."
             type="article"
-            className={`hidden desktop1:flex flex-col`}
+            className={`hidden desktop1:flex flex-col ml-0`}
           />
           <MotionDivDownToUp className={``}>
             <AboutFading />

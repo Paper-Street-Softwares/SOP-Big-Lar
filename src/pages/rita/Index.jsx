@@ -9,7 +9,7 @@ import FloatingWhatsappButton from "../../components/interactives/FloatingWhatsa
 import BackToTopButton from "../../components/interactives/BackToTopButton";
 import NavbarNovaTemplate from "../../components/sections/NavbarNova";
 
-export default function IndexRita() {
+export default function Index() {
   return (
     <div>
       {/* <ContactBarSection /> */}
