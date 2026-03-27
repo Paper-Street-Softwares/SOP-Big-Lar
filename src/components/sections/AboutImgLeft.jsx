@@ -37,25 +37,32 @@ export default function AboutImgLeft() {
       setModalTitle("Sobre a Big Lar");
       setModalContent(
         <p>
-          A Big Lar Imóveis reúne corretores associados qualificados para
-          atender clientes que buscam imóveis e lotes na região de Brasília.
-          Nosso foco é conectar pessoas às melhores oportunidades do mercado
-          imobiliário.
+          Big Lar imóveis, foi criada para atender clientes que desejam comprar
+          e vender com segurança, tendo um acompanhamento desde a compra ou
+          venda até o registro do imóvel. Empresa criada por Carlos Barbosa, com
+          experiência de mais de 40 anos no mercado de serviços.
           <br />
           <br />
-          Atuamos com profissionalismo e conhecimento da região, oferecendo
-          suporte completo para quem deseja comprar ou vender com segurança e
-          tranquilidade.
+          Essa experiência permitiu agregar conhecimento em operações voltadas
+          para os mais diversos segmentos que compõem esse mercado.
           <br />
           <br />
-          Atendemos principalmente clientes de médio e alto padrão que valorizam
-          um atendimento personalizado, discrição nas negociações e imóveis bem
-          selecionados.
+          Aliada a toda essa expertise, estamos sempre ligados em inovações e
+          nas novidades do mercado, tudo para você ter sossego e segurança,
+          garantindo ao seu imóvel a atenção e o toque de sofisticação que ele
+          merece.
           <br />
           <br />
-          Mais do que intermediar negócios, trabalhamos para garantir uma
-          experiência segura, transparente e eficiente em cada etapa da
-          negociação.
+          Nossa empresa tem como padrão um atendimento personalizado, contamos
+          com consultores especialistas aptos a orientar seus clientes de forma
+          a garantir o melhor negócio com segurança, sigilo e transparência.
+          <br />
+          <br />
+          Nossa estratégia de comunicação foca o mercado de alto padrão, sem
+          deixar de lado àqueles que desejam comprar imóveis, seja para morar ou
+          investir <br />
+          <br />
+          Conte conosco para realizar bons negócios e conquistar os seus sonhos!
         </p>,
       );
       setVisible(true);
