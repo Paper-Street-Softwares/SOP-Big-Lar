@@ -58,7 +58,10 @@ function Footer() {
                 strokeWidth={1}
                 className="text-white"
               />
-              <p>Atendimento online 24h</p>
+              <p>
+                Segunda à sábado: <br />
+                8h às 20h
+              </p>
             </div>
           </div>
         </MotionDivDownToUp>
