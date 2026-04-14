@@ -28,7 +28,38 @@ export default function AboutImgLeft() {
       // Aguarda 1 segundo antes de abrir o modal
       setTimeout(() => {
         setModalTitle("Sobre a Big Lar");
-        setModalContent(<p>A_Definir</p>);
+        setModalContent(
+          <p>
+            Big Lar imóveis, foi criada para atender clientes que desejam
+            comprar e vender com segurança, tendo um acompanhamento desde a
+            compra ou venda até o registro do imóvel. Empresa criada por Carlos
+            Barbosa, com experiência de mais de 40 anos no mercado de serviços.
+            <br />
+            <br />
+            Essa experiência permitiu agregar conhecimento em operações voltadas
+            para os mais diversos segmentos que compõem esse mercado.
+            <br />
+            <br />
+            Aliada a toda essa expertise, estamos sempre ligados em inovações e
+            nas novidades do mercado, tudo para você ter sossego e segurança,
+            garantindo ao seu imóvel a atenção e o toque de sofisticação que ele
+            merece.
+            <br />
+            <br />
+            Nossa empresa tem como padrão um atendimento personalizado, contamos
+            com consultores especialistas aptos a orientar seus clientes de
+            forma a garantir o melhor negócio com segurança, sigilo e
+            transparência.
+            <br />
+            <br />
+            Nossa estratégia de comunicação foca o mercado de alto padrão, sem
+            deixar de lado àqueles que desejam comprar imóveis, seja para morar
+            ou investir <br />
+            <br />
+            Conte conosco para realizar bons negócios e conquistar os seus
+            sonhos!
+          </p>
+        );
         setVisible(true);
         setButtonLabel("Leia mais"); // Retorna o label ao estado original
       }, 1000); // Aguarda 1 segundo
@@ -63,7 +94,7 @@ export default function AboutImgLeft() {
           investir <br />
           <br />
           Conte conosco para realizar bons negócios e conquistar os seus sonhos!
-        </p>,
+        </p>
       );
       setVisible(true);
     }
