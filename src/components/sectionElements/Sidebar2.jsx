@@ -38,7 +38,7 @@ export default function HeadlessDemo({ isSolid }) {
       <div className="flex justify-center card">
         <AlignJustify
           className={`lg:hidden ${
-            isSolid ? "text-black" : "text-black"
+            isSolid ? "text-primary" : "text-primary"
           } w-[40px] h-[40px] transition duration-300`}
           onClick={() => setVisible(true)}
         />
@@ -52,7 +52,7 @@ export default function HeadlessDemo({ isSolid }) {
               className="absolute top-0 left-0 flex-shrink-0 h-screen select-none surface-section lg:hidden lg:static z-1 surface-border"
               style={{ width: "280px" }}
             >
-              <div className="flex flex-col h-full">
+              <div className="flex flex-col h-full bg-secondary">
                 <div className="flex items-center justify-between flex-shrink-0 px-4 pt-4">
                   <span className="inline-flex items-center gap-2">
                     <img
@@ -69,7 +69,7 @@ export default function HeadlessDemo({ isSolid }) {
                       icon="pi pi-times"
                       rounded
                       outlined
-                      className="h-2rem w-2rem p-[5px]"
+                      className="h-2rem w-2rem p-[5px] text-white"
                     ></Button>
                   </span>
                 </div>
@@ -78,7 +78,7 @@ export default function HeadlessDemo({ isSolid }) {
                   <ul className="p-3 m-0 list-none">
                     <li>
                       {submenuVisible && (
-                        <ul className="p-0 m-0 -mt-[16px] overflow-hidden font-medium text-gray-700 list-none text-paragraph3 font-mainFont">
+                        <ul className="p-0 m-0 -mt-[16px] overflow-hidden font-medium text-white list-none text-paragraph3 font-mainFont">
                           <li>
                             <a className="flex items-center w-full p-3 transition-colors cursor-pointer p-ripple border-round text-700 hover:surface-100 transition-duration-150">
                               <HomeIcon />

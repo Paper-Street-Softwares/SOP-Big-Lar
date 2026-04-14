@@ -88,16 +88,16 @@ export default function NavbarSection() {
   //     window.scrollTo({ top: y, behavior: "smooth" });
   //   }
   // };
-  const textColor = scrolling ? "text-black" : "text-black";
-  const bgColor = scrolling ? "bg-black" : "bg-black";
+  const textColor = scrolling ? "text-white" : "text-white";
+  const bgColor = scrolling ? "bg-white" : "bg-white";
 
   return (
     <div className="w-full">
       <div
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrolling
-            ? "bg-white backdrop-blur-md shadow-sm border-b py-2"
-            : "bg-transparent py-4 bg-white"
+            ? "bg-secondary backdrop-blur-md shadow-sm border-b py-2"
+            : " py-4 bg-secondary"
         }`}
       >
         <Navbar>
@@ -110,7 +110,7 @@ export default function NavbarSection() {
             <img
               src={Logo}
               alt="Logo"
-              className="w-auto h-full object-contain"
+              className="object-contain w-auto h-full"
             />
           </a>
 
@@ -145,7 +145,7 @@ export default function NavbarSection() {
 
           {/* MENU DESKTOP */}
           {showListGroup && (
-            <div className="hidden desktop1:flex items-center gap-8 text-sm font-medium">
+            <div className="items-center hidden gap-8 text-sm font-medium desktop1:flex">
               {[
                 { id: "home", label: "Início", offset: -100 },
                 { id: "about", label: "Sobre", offset: -80 },
@@ -161,7 +161,7 @@ export default function NavbarSection() {
                   offset={item.offset}
                   className={`cursor-pointer relative group ${textColor}`}
                 >
-                  <span className="opacity-80 group-hover:opacity-100 transition">
+                  <span className="transition opacity-80 group-hover:opacity-100">
                     {item.label}
                   </span>
 

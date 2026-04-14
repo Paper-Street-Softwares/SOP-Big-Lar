@@ -31,7 +31,7 @@ export default function HeadlessDemo() {
   const toggleaplicationSubmenu = () => {
     setAplicationSubmenuVisible((prev) => !prev); // Alterna o submenu "Reports"
   };
-  
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -41,10 +41,10 @@ export default function HeadlessDemo() {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    
+    window.addEventListener("scroll", handleScroll);
+
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -58,7 +58,9 @@ export default function HeadlessDemo() {
       ></div>
       <div className="flex justify-center card ">
         <Button
-          className={`p-button-rounded p-button-outlined text-[30px] lg:hidden ${scrolled ? 'text-black' : 'text-white'}`}
+          className={`p-button-rounded p-button-outlined text-[30px] lg:hidden ${
+            scrolled ? "text-black" : "text-white"
+          }`}
           icon="pi pi-bars"
           onClick={() => setVisible(true)}
         />
@@ -67,7 +69,7 @@ export default function HeadlessDemo() {
           onHide={() => setVisible(false)}
           content={({ closeIconRef, hide }) => (
             <div
-              className="relative flex min-h-screen bg-blue-600  lg:hidden surface-ground"
+              className="relative flex min-h-screen bg-blue-600 lg:hidden surface-ground"
               style={{ width: "280px" }}
             >
               <div
@@ -125,7 +127,7 @@ export default function HeadlessDemo() {
                             className="flex items-center justify-between p-3 cursor-pointer p-ripple text-600"
                             onClick={toggleSubmenu}
                           >
-                            <span className="text-gray-700  font-mainFont">
+                            <span className="text-gray-700 font-mainFont">
                               FAVORITES
                             </span>
                             <i className="pi pi-chevron-down"></i>

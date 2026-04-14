@@ -9,7 +9,7 @@ export default function Sidebar({ showSidebar }) {
       }`}
     >
       <div className="mx-auto w-[88%] max-w-[1110px] tablet2:hidden">
-        <div className="flex h-auto px-12 py-6 bg-white font-mainFont">
+        <div className="flex h-auto px-12 py-6 bg-red-500 font-mainFont">
           <div className="overflow-y-auto">
             <ul className="text-black phone2:text-paragraph5 phone3:text-title1 tablet1:text-title2">
               <Link
